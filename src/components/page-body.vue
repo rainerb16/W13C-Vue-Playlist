@@ -2,8 +2,8 @@
   <div>
     <h1>Vue Playlist</h1>
     <div class="page-body">
-      <play-list />
       <song-list />
+      <play-list />
     </div>
   </div>
 </template>
