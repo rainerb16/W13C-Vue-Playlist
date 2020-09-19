@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div id="playlist-container"></div>
 </template>
 
 <script>
@@ -9,4 +9,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#playlist_container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+}
+</style>

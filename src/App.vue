@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import PageBody from "./components/play-list.vue";
+import PageBody from "./components/page-body.vue";
 
 export default {
   name: "App",

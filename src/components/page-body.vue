@@ -1,21 +1,33 @@
 <template>
   <div>
-    <page-playlist />
-    <page-songlist />
+    <h1>Vue Playlist</h1>
+    <div class="page-body">
+      <play-list />
+      <song-list />
+    </div>
   </div>
 </template>
 
 <script>
-import PagePlaylist from "./play-list.vue";
-import PageSonglist from "./song-list.vue";
+import PlayList from "./play-list.vue";
+import SongList from "./song-list.vue";
 
 export default {
   name: "page-body",
   components: {
-    PagePlaylist,
-    PageSonglist
+    PlayList,
+    SongList
   }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.page-body {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 50vh;
+}
+</style>
