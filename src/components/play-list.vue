@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 id="playlist-title"><u>Your Playlist</u></h1>
     <song-item
       id="playlist-container"
       v-for="song in songlist"

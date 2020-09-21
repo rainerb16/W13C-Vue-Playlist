@@ -17,7 +17,7 @@ export default {
 
 <style>
 * {
-  background-color: lightgrey;
+  background-color: rgb(194, 194, 194);
 }
 
 #app {
