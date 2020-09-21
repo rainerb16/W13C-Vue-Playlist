@@ -7,24 +7,24 @@ export default new Vuex.Store({
   state: {
     songlist: [
       {
-        artist: "Beyonce",
-        title: "Single Ladies"
+        artist: "Nocturnal Sunshine",
+        title: "Hotel"
       },
       {
-        artist: "Some Artist",
-        title: "Really Long Song"
+        artist: "Maya Jane Coles",
+        title: "Would You Kill (4 Me)?"
       },
       {
-        artist: "One More Artist",
-        title: "SunnyDay"
+        artist: "Max Cooper",
+        title: "Perpetual Motion"
       },
       {
-        artist: "Another Artist",
-        title: "Not So Single Ladies"
+        artist: "Rodriguez Jr.",
+        title: "Santa Cruz"
       },
       {
-        artist: "This Is The Last Artist",
-        title: "Last Song"
+        artist: "Nocturnal Sunshine",
+        title: "Radiate"
       }
     ],
     playlist: []
