@@ -37,14 +37,4 @@ export default {
   padding: 5px;
   margin: 1vw;
 }
-
-#add-btn {
-  background-color: teal;
-  color: white;
-  padding: 5px;
-  border: 1px solid black;
-  box-shadow: 3px 4px 6px grey;
-  margin: 1vw;
-  cursor: pointer;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Vue Playlist</h1>
+    <h1>THE VUE PLAYLIST</h1>
     <div class="page-body">
       <song-list />
       <play-list />

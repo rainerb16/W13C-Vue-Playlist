@@ -37,4 +37,23 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+button {
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 3px 4px 6px grey;
+  margin: 1vw;
+  cursor: pointer;
+}
+
+#songs{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 1vw;
+}
+</style>

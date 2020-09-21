@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1><u>Your Playlist</u></h1>
+    <h1 id="playlist-title"><u>Your Playlist</u></h1>
     <song-item
       id="playlist-container"
       v-for="song in songlist"
@@ -29,10 +29,12 @@ export default {
 </script>
 
 <style scoped>
-#playlist_container {
+#playlist-container {
   display: grid;
   align-items: center;
   justify-items: center;
   border: 1px solid black;
+  padding: 5px;
+  margin: 1vw;
 }
 </style>
