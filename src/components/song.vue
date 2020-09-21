@@ -61,11 +61,12 @@ button {
   font-weight: bold;
   text-shadow: 1px 0px 1px #d16666;
   font-size: 16px;
-  width: 150px;
-  transition: 0.5s;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 #add-btn:hover {
-  width: 200px;
+  transform: scale(0.9);
 }
 </style>
