@@ -1,11 +1,30 @@
 <template>
-  <div id="playlist-container"></div>
+  <div>
+    <h1><u>Your Playlist</u></h1>
+    <song-item
+      id="playlist-container"
+      v-for="song in songlist"
+      :key="song.title"
+      :song="song"
+      :inPlayList="true"
+    />
+  </div>
 </template>
 
 <script>
+import SongItem from "./song.vue";
+
 export default {
   name: "play-list",
-  components: {}
+  components: {
+    SongItem
+  },
+
+  data: function() {
+    return {
+      songlist: this.$store.state.playlist
+    };
+  }
 };
 </script>
 

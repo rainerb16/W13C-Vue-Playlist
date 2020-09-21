@@ -1,30 +1,29 @@
 <template>
   <div>
     <h1><u>Choose Song</u></h1>
-    <div
+    <song-item
       id="songs-list-container"
-      v-for="song in songs"
-      v-bind:key="song.title"
-    >
-      <h2>{{ song.title }}</h2>
-      <h4>{{ song.artist }}</h4>
-      <div id="add-btn">Add Song</div>
-    </div>
+      v-for="song in songlist"
+      :key="song.title"
+      :song="song"
+      :inPlayList="false"
+    />
   </div>
 </template>
 
 <script>
+import SongItem from "./song.vue";
+
 export default {
   name: "song-list",
 
-  computed: {
-    songs: function() {
-      return this.$store.state.songlist;
-    }
+  components: {
+    SongItem
   },
-
-  methods: {
-    addToPlaylist: function() {}
+  data: function() {
+    return {
+      songlist: this.$store.state.songlist
+    };
   }
 };
 </script>
@@ -46,5 +45,6 @@ export default {
   border: 1px solid black;
   box-shadow: 3px 4px 6px grey;
   margin: 1vw;
+  cursor: pointer;
 }
 </style>

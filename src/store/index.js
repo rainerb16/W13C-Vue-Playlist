@@ -15,7 +15,7 @@ export default new Vuex.Store({
         title: "Really Long Song"
       },
       {
-        artist: "Artist",
+        artist: "One More Artist",
         title: "SunnyDay"
       },
       {
@@ -29,14 +29,26 @@ export default new Vuex.Store({
     ],
     playlist: []
   },
+
   mutations: {
-    // updatePlaylist: function(state, song) {
-    //   let i = 0;
-    //   for(i = 0; i < state.songlist.length; i++) {
-    //     if()
-    //   }
-    // }
+    addToPlaylist: function(state, addedSong) {
+      state.playlist.push(addedSong);
+      for (let i = 0; i < state.songlist.length; i++) {
+        if (state.songlist[i] == addedSong) {
+          state.songlist.splice(i, 1);
+        }
+      }
+    },
+    deleteFromPlaylist: function(state, removedSong) {
+      state.songlist.push(removedSong);
+      for (let i = 0; i < state.playlist.length; i++) {
+        if (state.playlist[i] == removedSong) {
+          state.playlist.splice(i, 1);
+        }
+      }
+    }
   },
   actions: {},
+
   modules: {}
 });
